@@ -1,0 +1,27 @@
+<!doctype html>
+<html>
+
+<head>
+  <meta http-equiv="Content-Type" content="text/html;charset=utf-8">
+  <link href="main.css" rel="stylesheet" media="screen" type="text/css">
+  <title>WebRTC Samples client</title>
+</head>
+
+<body>
+
+  <h1>
+    client demo
+  </h1>
+
+  <video id="localVideo" autoplay muted></video>
+  <video id="remoteVideo" autoplay muted></video>
+  <!-- hangUpCall 函数的作用是关闭调用，并向另一个对等端发送通知，让它也关闭 -->
+  <button id="hangup-button" onclick="hangUpCall();" disabled>
+    Hang Up
+  </button>
+
+  <script src="./node_modules/socket.io/client-dist/socket.io.js"></script>
+  <script src="./client.js"></script>
+</body>
+
+</html>

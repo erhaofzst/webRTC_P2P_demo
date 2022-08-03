@@ -1,0 +1,128 @@
+* {
+    padding: 0;
+    margin: 0
+}
+
+body {
+    text-align: center;
+}
+
+h1 {
+    margin-top: 20px;
+    font-family: 'Comic Sans MS';
+}
+
+.content {
+    margin-top: 30px;
+    display: flex;
+    justify-content: center;
+}
+
+video {
+    width: 1000px;
+    height: 600px;
+    background-color: rgba(230, 243, 230, 0.4);
+}
+
+button {
+    display: block;
+    width: 150px;
+    height: 40px;
+    font-size: 18px;
+    margin: 20px auto;
+    background-color: aquamarine;
+    box-shadow: 1px 2px 1px 1px rgb(214, 57, 57);
+    border-radius: 5px;
+}
+
+#callButton {
+    background-color: rgb(52, 224, 167);
+}
+
+#hangupButton {
+    background-color: rgb(236, 82, 102);
+}
+
+#opButton {
+    background-color: rgb(234, 196, 202);
+}
+
+
+.content {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.box {
+    display: flex;
+    justify-content: center;
+    width: 1000px;
+    margin: 0 auto;
+}
+
+.eventBox {
+    padding: 5px;
+    width: 75%;
+    margin: 10px auto;
+    border: 2px solid black;
+    height: 600px;
+    border-radius: 5px;
+    text-align: center;
+    overflow-y: auto;
+}
+
+
+span {
+    font-family: 'Comic Sans MS';
+    font-size: 18px;
+}
+
+@media screen and (max-width: 1000px) {
+    video {
+        width: 200px;
+        height: 120px;
+        background-color: rgba(230, 243, 230, 0.4);
+    }
+}
+
+label {
+    display: block;
+    font-size: 20px;
+    font-family: 'Comic Sans MS';
+    margin: 15px;
+}
+
+.idShow {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin: 5px
+}
+
+input {
+    width: 180px;
+    height: 30px;
+    padding: 5px;
+    font-size: 16px;
+    border-radius: 10px;
+}
+
+.idShow input {
+    width: 220px;
+}
+
+.eventBox {
+    padding: 5px;
+    width: 50%;
+    margin: 10px auto;
+    border: 2px solid black;
+    height: 300px;
+    border-radius: 5px;
+    text-align: center;
+    overflow-y: auto;
+}
+
+
+button:disabled {
+    cursor: not-allowed
+}
